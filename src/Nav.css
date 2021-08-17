@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: indigo;
+  color: aliceblue;
+}
+.nav .navbar-brand {
+  font-size: 20px;
+  font-weight: 800px;
+  color: ivory;
+  margin-top: 20px;
+}
+ul {
+  display: flex;
+}
+ul li {
+  margin: 10px;
+  list-style: none;
+}
+ul li a {
+  color: #fff;
+}
