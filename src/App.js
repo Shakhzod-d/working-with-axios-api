@@ -3,26 +3,29 @@
 import Blog from './Blog';
 import About from './About';
 import Nav from './Nav';
+
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      {' '}
-      <div className="App">
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/about" component={About} />
-        </Switch>
-        {/* <About /> */}
-        {/* <SassTutorial />
+    <>
+      <BrowserRouter>
+        {' '}
+        <div className="App">
+          <Nav />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/blog" component={Blog} />
+            <Route path="/about" component={About} />
+          </Switch>
+          {/* <About /> */}
+          {/* <SassTutorial />
         <Photos /> */}
-      </div>
-    </BrowserRouter>
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
